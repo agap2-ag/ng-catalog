@@ -2,6 +2,13 @@
 
 A simple catalog of products using [Bootsrap](https://getbootstrap.com) for layout.
 
+<div align="center">
+  <img src="src/assets/catalog_products.png" alt="reactive-feed screenshots" title="Catalog screenshot" />
+</div>
+<div align="center">
+  <img src="src/assets/catalog_product_detail.png" alt="reactive-feed screenshots" title="Product details screenshot" />
+</div>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
 ## Development server
