@@ -9,7 +9,7 @@ A simple catalog of products using [Bootsrap](https://getbootstrap.com) for layo
   <img src="src/assets/catalog_product_detail.png" alt="reactive-feed screenshots" title="Product details screenshot" />
 </div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+This project is **deployed at [agap2-ag.github.io/ng-catalog](https://agap2-ag.github.io/ng-catalog)** and was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
 ## Development server
 
