@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home.component';
 import { ProductItemComponent } from './components/product-item.component';
 import { ProductDetailComponent } from './components/product-detail.component';
 import { NotFoundComponent } from './components/not-found.component';
+import { ProductCreateComponent } from './components/product-create.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { NotFoundComponent } from './components/not-found.component';
     HomeComponent,
     ProductItemComponent,
     ProductDetailComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ProductCreateComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule
   ],
   providers: [{provide:LocationStrategy, useClass:PathLocationStrategy}],
   bootstrap: [AppComponent]

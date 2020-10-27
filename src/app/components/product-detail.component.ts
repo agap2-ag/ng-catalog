@@ -21,10 +21,10 @@ export class ProductDetailComponent implements OnInit {
   public pid: number;
   product: Product;
   constructor(
-    private route:ActivatedRoute,
+    private activatedRoute:ActivatedRoute,
     private prodServ: ProductService
   ) {
-    this.pid = Number(route.snapshot.paramMap.get('id'));
+    this.pid = Number(activatedRoute.snapshot.paramMap.get('id'));
     this.product = prodServ.getProduct(this.pid);
   }
 

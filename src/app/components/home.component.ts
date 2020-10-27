@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../shared/product.service';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +9,19 @@ import { Component, OnInit } from '@angular/core';
         <app-product-item [pid]=id></app-product-item>
       </div>
     </div>
-  `
+  `,
 })
 export class HomeComponent implements OnInit {
   public idsToShow: number[];
-  public limitCatalog: number;
   public rows: number[][];
   public limitPerRow: number;
 
-  constructor() {
-    this.limitCatalog = 8;
+  constructor(
+    private prodServ: ProductService
+  ) {
+    const listSize: number = this.prodServ.fillStore();
     this.limitPerRow = 3;
-    this.idsToShow = [...Array(this.limitCatalog).keys()];
+    this.idsToShow = [...Array(listSize).keys()];
     this.rows = [];
   }
 
